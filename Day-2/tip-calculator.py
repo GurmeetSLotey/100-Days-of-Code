@@ -11,5 +11,10 @@ cost_per_person = total/num_of_people
 tip_amt = total * (tip_percent/100)
 tip_per_person = tip_amt/num_of_people
 
+total_per_person = cost_per_person + tip_per_person
+
 # How to better get precision to two decimal places
-print("Each person should pay: $" + str(round(cost_per_person + tip_per_person,2)))
+#. using f string along with :.2f
+# print("Each person should pay: $" + str(round(cost_per_person + tip_per_person,2)))
+
+print(f"Each person should pay: ${total_per_person:.2f}")
