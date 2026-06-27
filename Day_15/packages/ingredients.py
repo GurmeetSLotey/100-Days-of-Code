@@ -28,6 +28,7 @@ resources = {
     "water": 300,
     "milk": 200,
     "coffee": 100,
+    "money": 0,
 }
 
 coins = {
@@ -36,3 +37,6 @@ coins = {
     "dime": 0.10,
     "quarter": 0.25
 }
+
+for k, v in MENU['espresso']['ingredients'].items():
+    print(resources[k])
