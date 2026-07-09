@@ -1,8 +1,6 @@
 from turtle import Turtle, Screen
 import random 
 
-Turtle.colormode(255) # To change the color mode for RGB
-
 colors = ["red","blue","green","wheat","black"]
 degrees = [0,90,180,270]
 
@@ -42,6 +40,7 @@ def reset_screen():
 timmy = Turtle()
 timmy.speed("fast")
 screen = Screen()
+screen.colormode(255) # To change the color mode for RGB
 
 
 timmy.shape("turtle")
